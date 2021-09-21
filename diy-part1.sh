@@ -14,5 +14,17 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+
+cd package
+mkdir openwrt-packages
+cd openwrt-packages
+git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
+git clone https://github.com/rosywrt/luci-theme-rosy.git
+git clone https://github.com/kongfl888/luci-app-adguardhome.git
+git clone --depth=1 -b master https://github.com/vernesong/OpenClash
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/jerrykuku/lua-maxminddb.git
+git clone https://github.com/jerrykuku/luci-app-vssr.git
