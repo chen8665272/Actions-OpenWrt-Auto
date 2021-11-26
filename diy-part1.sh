@@ -28,3 +28,4 @@ git clone --depth=1 -b master https://github.com/vernesong/OpenClash
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 git clone https://github.com/jerrykuku/lua-maxminddb.git
 git clone https://github.com/jerrykuku/luci-app-vssr.git
+git clone https://github.com/fan430/luci_bridge.git
